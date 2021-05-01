@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Shopozo",
-    "slug": "Shopozo",
+    "name": "Friends",
+    "slug": "Friends",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -17,12 +17,22 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tsb.friends",
+      "buildNumber": "1.0.0"
     },
     "android": {
+      "package": "com.tsb.friends",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
+      },
+      "config": {
+        "googleSignIn": {
+          "apiKey": "AIzaSyBxTKzKaeMUCQJObjiivSoycUGc08_mkyY",
+          "certificateHash": "27F0DDC7320F051195CAD8CA5B04985F06DBB796"
+        }
       }
     },
     "web": {
