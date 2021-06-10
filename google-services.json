@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "504927310725",
+    "firebase_url": "https://shopozo-746ba-default-rtdb.firebaseio.com",
+    "project_id": "shopozo-746ba",
+    "storage_bucket": "shopozo-746ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504927310725:android:91f0a392ddd3f37844eaec",
+        "android_client_info": {
+          "package_name": "com.tsb.friends"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "504927310725-k1ru1oekbqb75b3l6kppkpqd399audsg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxTKzKaeMUCQJObjiivSoycUGc08_mkyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "504927310725-k1ru1oekbqb75b3l6kppkpqd399audsg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
