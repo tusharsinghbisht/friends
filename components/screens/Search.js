@@ -1,5 +1,5 @@
 import { AntDesign } from '@expo/vector-icons'
-import { Button } from 'native-base'
+import { Button, Spinner } from 'native-base'
 import React from 'react'
 import { useContext } from 'react'
 import { useState } from 'react'
@@ -37,6 +37,10 @@ const Search = () => {
     const switchScreen = (user) => {
         navigate("Home")
         navigate("UserProfile", user)
+    }
+
+    if (!user) {
+        return <Spinner />
     }
 
     return (

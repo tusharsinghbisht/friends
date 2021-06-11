@@ -1,4 +1,4 @@
-import { Button, H1, Tabs, Tab, TabHeading } from 'native-base'
+import { Button, H1, Tabs, Tab, TabHeading, Spinner } from 'native-base'
 import React, { useContext, useState, useEffect } from 'react'
 import { Alert, StyleSheet, Text, Image, View, TouchableOpacity, ScrollView } from 'react-native'
 import { UserContext } from '../context/UserContext'
@@ -110,6 +110,10 @@ const UserProfile = ({ route, navigation }) => {
             }
 
         }
+    }
+
+    if (!user) {
+        return <Spinner />
     }
 
     return (

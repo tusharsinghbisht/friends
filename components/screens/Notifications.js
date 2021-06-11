@@ -173,7 +173,7 @@ const Notifications = () => {
             })
     }
 
-    if (!notis) {
+    if (!user || !notis) {
         return <Spinner />
     }
 
