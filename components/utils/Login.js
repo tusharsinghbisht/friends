@@ -6,7 +6,8 @@ import { Button, Spinner } from 'native-base'
 import { AntDesign } from "@expo/vector-icons"
 
 const Login = () => {
-    const ANDROID_CLIENT_ID = "504927310725-rstrnh15sae10tbj0dbas84j68e3c6ni.apps.googleusercontent.com"
+    const ANDROIDSTANDALONE_CLIENT_ID = "504927310725-a5qno7nl830mpj40sleiq7u8lo6fnufa.apps.googleusercontent.com"
+    const ANDROID_CLIENT_ID = "504927310725-r8emef6obcsk57sghip27k7d6vruuhnn.apps.googleusercontent.com"
 
     const [loading, setLoading] = useState(false)
 
@@ -14,7 +15,7 @@ const Login = () => {
         try {
             setLoading(true)
             const result = await GoogleSignIn.logInAsync({
-                androidStandaloneAppClientId: ANDROID_CLIENT_ID,
+                androidStandaloneAppClientId: ANDROIDSTANDALONE_CLIENT_ID,
                 androidClientId: ANDROID_CLIENT_ID,
                 scopes: ["profile", "email"],
                 behavior: "web"
@@ -63,7 +64,7 @@ const Login = () => {
             <Text style={styles.txt}>Login to Friends..</Text>
             <Button style={styles.btn} onPress={signIn} large transparent block danger >
                 <AntDesign name="google" size={30} color="white" style={{ padding: 10 }} />
-                <Text style={styles.btnTxt}>SIGN IN</Text>
+                <Text style={styles.btnTxt}>SIGN IN WITH GOOGLE</Text>
             </Button>
         </View>
     )
@@ -86,8 +87,8 @@ const styles = StyleSheet.create({
         height: Dimensions.get("window").width+20,
         position: "absolute",
         backgroundColor: "#ff650075",
-        top: -100,
-        right: 100,
+        bottom: -100,
+        left: -100,
         borderRadius: 1000 / 2,
     },
     main: {
