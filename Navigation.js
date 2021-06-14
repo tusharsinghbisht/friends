@@ -29,10 +29,12 @@ const Navigation = () => {
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        firebase.auth().onAuthStateChanged(user => {
+        const unsubscribe = firebase.auth().onAuthStateChanged(user => {
             setUser(user)
             setLoading(false)
         })
+
+        return unsubscribe
     })
 
     if (loading) {

@@ -171,11 +171,7 @@ const EditRoom = ({ room, goBack, setRoom, user }) => {
                                 name="times"
                                 size={30}
                                 style={styles.closeBtn}
-                                onPress={() => {
-                                    setMemberModal(false)
-                                    setRoomModal(true)
-                                }
-                                }
+                                onPress={() => setMemberModal(false)}
                             />
                             <Text style={styles.memberModalHead}>Add Member</Text>
 
